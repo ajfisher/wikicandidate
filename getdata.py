@@ -7,6 +7,7 @@ from threading import Thread
 
 num_of_threads = 50
 
+unions = "list_of_unions_+_workers_associations.txt"
 senate = "australian_federal_election_2016_-_senate_candidates.txt"
 reps = "australian_federal_election_2016_-_house_of_reps_candidates.txt"
 
@@ -17,6 +18,8 @@ if len(sys.argv) > 1:
         file_to_use = senate
     elif sys.argv[1] == "reps":
         file_to_use = reps
+    elif sys.argv[1] == "unions":
+        file_to_use = unions
 
 wikiurl = "https://search.wikileaks.org/"
 
